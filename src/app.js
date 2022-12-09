@@ -22,6 +22,9 @@ class Blog {
 var popupContact = document.getElementById('popupContact');
 var editButton = document.getElementById('edit');
 var deleteButton = document.getElementById('delete');
+var imgToAppear = document.getElementById('imgToAppear');
+
+imgToAppear.style.display = 'none';
 
 function helperAddPost() {
   popupContact.style.display = 'inherit';
@@ -36,6 +39,7 @@ function helperPost() {
     document.getElementById('detail').value;
 
   document.querySelector('.card-buttons').style.display = 'inherit';
+  imgToAppear.style.display = 'inherit';
 }
 
 // This is my code (Not related to the module)
@@ -52,4 +56,5 @@ deleteButton.onclick = () => {
   document.getElementById('blog-description').innerText = '';
 
   document.querySelector('.card-buttons').style.display = 'none';
+  imgToAppear.style.display = 'none';
 };
