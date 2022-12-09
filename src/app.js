@@ -34,7 +34,8 @@ function helperPost() {
     document.getElementById('title').value;
   document.getElementById('blog-description').innerText =
     document.getElementById('detail').value;
-    document.querySelector('.card-buttons').style.display = 'inherit';
+
+  document.querySelector('.card-buttons').style.display = 'inherit';
 }
 
 // This is my code (Not related to the module)
@@ -42,6 +43,13 @@ document.getElementById('close').onclick = () => {
   popupContact.style.display = 'none';
 };
 
-// editButton.onclick = () => {
-//   if()
-// }
+editButton.onclick = () => {
+  helperAddPost();
+};
+
+deleteButton.onclick = () => {
+  document.getElementById('blog-title').innerText = '';
+  document.getElementById('blog-description').innerText = '';
+
+  document.querySelector('.card-buttons').style.display = 'none';
+};

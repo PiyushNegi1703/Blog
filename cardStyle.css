@@ -69,7 +69,7 @@ nav ul a {
 
 .article-card {
   width: 320px;
-  margin: 10rem 0;
+  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -221,6 +221,6 @@ textarea {
 
 /* My Code (Not related to the module) */
 
-/* .card-buttons {
+.card-buttons {
   display: none;
-} */
+}
