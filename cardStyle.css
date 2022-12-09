@@ -69,7 +69,7 @@ nav ul a {
 
 .article-card {
   width: 320px;
-  /* margin: 30rem 0; */
+  margin: 10rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
